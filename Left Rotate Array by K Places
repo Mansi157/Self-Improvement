@@ -1,0 +1,21 @@
+class Solution {
+    public void rotateArray(int[] nums, int k) {
+     int n=n.length;
+
+     k=k%n;
+
+      reverse(nums,0,n-k);
+      reverse(nums,n-k,n-1);
+      reverse(nums,0,n-1);
+    }
+
+    private void reverse(int[] nums,int f,int l){
+        whilte(f<l){
+            int temp=nums[f];
+            nums[f]=nums[l];
+            num[l]=temp;
+            f++;
+            l++;
+        }
+    }
+}
