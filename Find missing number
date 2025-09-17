@@ -1,0 +1,13 @@
+class Solution {
+    public int missingNumber(int[] nums) {
+        int max=0;
+        int n=nums.length;
+
+        for(int i=0;i<n;i++){
+            max=max+nums[i];
+        }
+
+        int c=(n*(n+1))/2;
+        return c-max;
+    }
+}
